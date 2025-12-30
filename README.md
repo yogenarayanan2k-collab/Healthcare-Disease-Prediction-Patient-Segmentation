@@ -1,1 +1,0 @@
-# Healthcare-Disease-Prediction-Patient-Segmentation
