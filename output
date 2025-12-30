@@ -1,0 +1,78 @@
+HEALTHCARE DISEASE PREDICTION PROJECT
+(Supervised + Unsupervised Machine Learning)
+Dataset Shape: (70000, 13)
+   id    age  gender  height  weight  ...  gluc  smoke  alco  active  cardio
+0   0  18393       2     168    62.0  ...     1      0     0       1       0
+1   1  20228       1     156    85.0  ...     1      0     0       1       1
+2   2  18857       1     165    64.0  ...     1      0     0       0       1
+3   3  17623       2     169    82.0  ...     1      0     0       1       1
+4   4  17474       1     156    56.0  ...     1      0     0       0       0
+
+[5 rows x 13 columns]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 70000 entries, 0 to 69999
+Data columns (total 13 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           70000 non-null  int64
+ 1   age          70000 non-null  int64
+ 2   gender       70000 non-null  int64
+ 3   height       70000 non-null  int64
+ 4   weight       70000 non-null  float64
+ 5   ap_hi        70000 non-null  int64
+ 6   ap_lo        70000 non-null  int64
+ 7   cholesterol  70000 non-null  int64
+ 8   gluc         70000 non-null  int64
+ 9   smoke        70000 non-null  int64
+ 10  alco         70000 non-null  int64
+ 11  active       70000 non-null  int64
+ 12  cardio       70000 non-null  int64
+dtypes: float64(1), int64(12)
+memory usage: 6.9 MB
+None
+                 id           age  ...        active        cardio
+count  70000.000000  70000.000000  ...  70000.000000  70000.000000
+mean   49972.419900  19468.865814  ...      0.803729      0.499700
+std    28851.302323   2467.251667  ...      0.397179      0.500003
+min        0.000000  10798.000000  ...      0.000000      0.000000
+25%    25006.750000  17664.000000  ...      1.000000      0.000000
+50%    50001.500000  19703.000000  ...      1.000000      0.000000
+75%    74889.250000  21327.000000  ...      1.000000      1.000000
+max    99999.000000  23713.000000  ...      1.000000      1.000000
+
+[8 rows x 13 columns]
+Random Forest Results
+Accuracy: 0.7389285714285714
+[[5508 1480]
+ [2175 4837]]
+              precision    recall  f1-score   support
+
+           0       0.72      0.79      0.75      6988
+           1       0.77      0.69      0.73      7012
+
+    accuracy                           0.74     14000
+   macro avg       0.74      0.74      0.74     14000
+weighted avg       0.74      0.74      0.74     14000
+
+SVM Results
+Accuracy: 0.7341428571428571
+[[5329 1659]
+ [2063 4949]]
+              precision    recall  f1-score   support
+
+           0       0.72      0.76      0.74      6988
+           1       0.75      0.71      0.73      7012
+
+    accuracy                           0.73     14000
+   macro avg       0.73      0.73      0.73     14000
+weighted avg       0.73      0.73      0.73     14000
+
+   Cluster
+0        2
+1        0
+2        1
+3        2
+4        1
+Healthcare ML Project Completed Successfully!
+
+Process finished with exit code 0
